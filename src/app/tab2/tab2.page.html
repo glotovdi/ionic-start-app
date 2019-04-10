@@ -1,9 +1,30 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Евро
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/YFc0F44b.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Конвертор валют</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Конвертор Евро -> Рубли
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label position="floating">Евро</ion-label>
+    <ion-input [formControl]="form.get('eu')"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Рубли</ion-label>
+    <ion-input [formControl]="form.get('rub')"></ion-input>
+  </ion-item>
+</ion-content>
